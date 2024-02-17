@@ -1,1 +1,53 @@
-/* soon to come! */
+* {
+    box-sizing: border-box;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+#homepage-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Displaying text over image */
+#homepage-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#homepage-text-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: #fff;
+}
+
+#homepage-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: .5rem;
+}
+
+#homepage-text-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+    background-color: orange;
+    padding: 1rem;
+    border-radius: .5rem;
+    text-decoration: none;
+}
