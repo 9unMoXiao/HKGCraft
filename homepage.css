@@ -15,6 +15,27 @@
         background-color: #f8f9f9;
         padding: 3rem 5rem;
     }
+
+    .store-info-container {
+        display: grid;
+        gap: 1rem;
+        grid-template-rows: repeat(2, minmax(0, 1fr));
+    }
+
+    .store-info-left-col {
+        display: grid;
+        display: inherit;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .store-info-address,
+    .store-info-hours {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /* CSS rules for mobile sizes. */
@@ -50,6 +71,24 @@
         gap: 2rem;
         background-color: #f8f9f9;
         padding: 3rem 10rem;
+    }
+
+    .store-info-container {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: none;
+    }
+    
+    .store-info-left-col {
+        display: grid;
+        grid-template-rows: repeat(2, minmax(0, 1fr));
+        display: inherit;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .store-info-right-col {
+        width: 75%;
     }
 }
 
@@ -141,4 +180,50 @@
 
 .nav-menu-item {
     padding: 1rem;
+}
+
+.location-container {
+    padding: 3rem 0;
+}
+
+.location-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-family: "Montserrat",Helvetica,Arial,sans-serif;
+}
+
+.store-info-address {
+
+}
+
+.store-info-header {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #777;
+}
+
+.store-info-hours {
+  
+}
+
+.store-info-text,
+.span-row-left,
+.span-row-right {
+    font-size: 1rem;
+    color: #777;
+}
+
+.store-info-text,
+.store-info-row-container {
+    margin-bottom: .5rem;
+}
+
+.store-info-location {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
