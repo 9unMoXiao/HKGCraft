@@ -165,7 +165,7 @@
 
 #nav-menu {
     list-style-type: none;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 /* Selecting all li within ul with a specific class name. */
@@ -176,10 +176,17 @@
 #nav-menu > li > a {
     text-decoration: none;
     color: white;
+    padding: 1rem;
+}
+
+#nav-menu > li > a:hover {
+    border-bottom: 1px solid white;
+    padding-bottom: .5rem;
+    transition: .5s ease-in-out;
 }
 
 .nav-menu-item {
-    padding: 1rem;
+    /* padding: 1rem; */
 }
 
 .location-container {
