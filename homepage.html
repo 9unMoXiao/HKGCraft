@@ -3,21 +3,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Homepage</title>
 </head>
 <body>
+    <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function myFunction() {
+        var x = document.getElementById("navbar");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+        }
+    </script>
     <main>
-        <nav id="navbar">
-            <ul id="nav-menu">
-                <li class="nav-menu-item"><a class="nav-menu-item-link" href="homepage.html">Home</a></li>
-                <li class="nav-menu-item"><a class="nav-menu-item-link" href="menu.html">Menu</a></li>
-                <li class="nav-menu-item"><a class="nav-menu-item-link" href="about.html">About</a></li>
-            </ul>
-        </nav>
+        <!-- <div class="navbar-container">
+            <nav id="navbar">
+                <ul id="nav-menu">
+                    <li class="nav-menu-item"><a class="nav-menu-item-link" href="homepage.html">Home</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-item-link" href="menu.html">Menu</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-item-link" href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <a 
+                class="icon"
+                href="javascript:void(0);"  
+                onclick="myFunction()"
+            >
+                <i 
+                    class="fa fa-bars"
+                >
+                </i>
+            </a>
+        </div> -->
         <section id="homepage-section">
             <img 
                 id="homepage-image"
-                src="https://comres.heroonlineorders.com/res//storeWebPicRes/ChineseStyle/hero.jpg" 
+                src="./public/rtc.jpg" 
                 alt="homepage image"
             >
             <div id="homepage-text-container">
@@ -29,7 +53,7 @@
                 </p>
                 <a
                     id="homepage-text-button" 
-                    href="https://onlineorder.heroonlineorders.com/#/pages/menu/menu?urlparam=hong-kong-garden-hampstead-21074"
+                    href="https://www.doordash.com/store/hongkong--garden-hampstead-26204049/"
                     target="_blank"
                 >
                     Order Online
@@ -40,7 +64,7 @@
             <div class="gallery-container">
                 <div class="gallery-image-1">
                     <img 
-                        src="https://comres.heroonlineorders.com/res//storeWebPicRes/ChineseStyle/pic_1.jpg" 
+                        src="./public/bwb.jpg" 
                         alt="Gallery Image 1"
                         width="100%"
                         height="100%"
@@ -48,7 +72,7 @@
                 </div>
                 <div class="gallery-image-2">
                     <img 
-                        src="https://comres.heroonlineorders.com/res//storeWebPicRes/ChineseStyle/pic_2.jpg" 
+                        src="./public/tsoc.jpg"  
                         alt="Gallery Image 2"
                         width="100%"
                         height="100%"
@@ -56,7 +80,7 @@
                 </div>
                 <div class="gallery-image-3">
                     <img 
-                        src="https://comres.heroonlineorders.com/res//storeWebPicRes/ChineseStyle/pic_3.jpg" 
+                        src="./public/hslm.jpg" 
                         alt="Gallery Image 2"
                         width="100%"
                         height="100%"
